@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		450949B52319C9F9001C77C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450949B42319C9F9001C77C2 /* AppDelegate.swift */; };
-		450949B72319C9F9001C77C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450949B62319C9F9001C77C2 /* ViewController.swift */; };
 		450949BA2319C9F9001C77C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450949B82319C9F9001C77C2 /* Main.storyboard */; };
 		450949BC2319C9FA001C77C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450949BB2319C9FA001C77C2 /* Assets.xcassets */; };
 		450949BF2319C9FA001C77C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450949BD2319C9FA001C77C2 /* LaunchScreen.storyboard */; };
+		450949C72319CC26001C77C2 /* VillainListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450949C62319CC26001C77C2 /* VillainListCollectionViewController.swift */; };
+		450949C92319CC60001C77C2 /* VillainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450949C82319CC60001C77C2 /* VillainCollectionViewCell.swift */; };
+		450949CB2319D0A2001C77C2 /* VillainSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450949CA2319D0A2001C77C2 /* VillainSelectedViewController.swift */; };
+		450949CD2319D628001C77C2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450949CC2319D628001C77C2 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		450949B12319C9F9001C77C2 /* SuperHero FightClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperHero FightClub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		450949B42319C9F9001C77C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		450949B62319C9F9001C77C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		450949B92319C9F9001C77C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		450949BB2319C9FA001C77C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		450949BE2319C9FA001C77C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		450949C02319C9FA001C77C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450949C62319CC26001C77C2 /* VillainListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainListCollectionViewController.swift; sourceTree = "<group>"; };
+		450949C82319CC60001C77C2 /* VillainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainCollectionViewCell.swift; sourceTree = "<group>"; };
+		450949CA2319D0A2001C77C2 /* VillainSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainSelectedViewController.swift; sourceTree = "<group>"; };
+		450949CC2319D628001C77C2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,10 @@
 		450949A82319C9F9001C77C2 = {
 			isa = PBXGroup;
 			children = (
+				450949CC2319D628001C77C2 /* LogInViewController.swift */,
+				450949CA2319D0A2001C77C2 /* VillainSelectedViewController.swift */,
+				450949C82319CC60001C77C2 /* VillainCollectionViewCell.swift */,
+				450949C62319CC26001C77C2 /* VillainListCollectionViewController.swift */,
 				450949B32319C9F9001C77C2 /* SuperHero FightClub */,
 				450949B22319C9F9001C77C2 /* Products */,
 			);
@@ -55,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				450949B42319C9F9001C77C2 /* AppDelegate.swift */,
-				450949B62319C9F9001C77C2 /* ViewController.swift */,
 				450949B82319C9F9001C77C2 /* Main.storyboard */,
 				450949BB2319C9FA001C77C2 /* Assets.xcassets */,
 				450949BD2319C9FA001C77C2 /* LaunchScreen.storyboard */,
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				450949B72319C9F9001C77C2 /* ViewController.swift in Sources */,
+				450949C72319CC26001C77C2 /* VillainListCollectionViewController.swift in Sources */,
+				450949CB2319D0A2001C77C2 /* VillainSelectedViewController.swift in Sources */,
 				450949B52319C9F9001C77C2 /* AppDelegate.swift in Sources */,
+				450949CD2319D628001C77C2 /* LogInViewController.swift in Sources */,
+				450949C92319CC60001C77C2 /* VillainCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
