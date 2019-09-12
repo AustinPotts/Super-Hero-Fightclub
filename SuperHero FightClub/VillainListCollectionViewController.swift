@@ -60,6 +60,18 @@ class VillainListCollectionViewController: UICollectionViewController {
         
         return cell
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "VillainSelectedSegue" {
+            guard let indexPath = collectionView.indexPathsForSelectedItems?.first?.item,
+                let villainSelectVC = segue.destination as? VillainSelectedViewController else{return}
+            
+            let selectedVillain = villainController.villains[indexPath]
+            villainSelectVC.villain = selectedVillain
+            
+        }
+    }
 
     // MARK: UICollectionViewDelegate
 

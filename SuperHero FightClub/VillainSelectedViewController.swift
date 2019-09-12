@@ -10,6 +10,8 @@ import UIKit
 
 class VillainSelectedViewController: UIViewController {
 
+    @IBOutlet weak var villainImageView: UIImageView!
+    @IBOutlet weak var villainName: UILabel!
     
     var villain: Villain?
     
@@ -17,13 +19,14 @@ class VillainSelectedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateViews()
     }
     
     func updateViews(){
-        //if let villain = villain {
-            
-        //}
+        if let villain = villain {
+            villainImageView.image = villain.image
+            villainName.text = villain.name
+        }
     }
     
 
