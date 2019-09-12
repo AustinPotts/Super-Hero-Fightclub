@@ -16,7 +16,7 @@ class VillainCollectionViewCell: UICollectionViewCell {
     
     var villain: Villain? {
         didSet{
-            
+            updateViews()
         }
     }
     

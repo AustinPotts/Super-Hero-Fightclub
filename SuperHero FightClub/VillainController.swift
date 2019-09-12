@@ -14,7 +14,8 @@ class VillainController {
 var villains: [Villain] = [
 
              Villain(name: "Bane", imageName: "Bane"),
-             Villain(name: "Shredder", imageName: "Shredder")
+             Villain(name: "DarthVader", imageName: "DarthVader"),
+             Villain(name: "TheJoker", imageName: "Joker")
 
 
 
