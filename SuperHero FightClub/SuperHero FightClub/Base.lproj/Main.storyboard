@@ -25,7 +25,7 @@
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6Ft-rM-8St" customClass="VillainCollectionViewCell" customModule="SuperHero_FightClub" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VillainCell" id="6Ft-rM-8St" customClass="VillainCollectionViewCell" customModule="SuperHero_FightClub" customModuleProvider="target">
                                 <rect key="frame" x="10" y="10" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -67,6 +67,8 @@
                                     <constraint firstItem="9n0-Uq-d9R" firstAttribute="top" secondItem="6Ft-rM-8St" secondAttribute="top" id="n8a-HG-Avj"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="villainImageView" destination="fhC-D4-1Zv" id="fxb-Le-yOa"/>
+                                    <outlet property="villainNameLabel" destination="M8A-9a-cgb" id="D3I-tV-vb3"/>
                                     <segue destination="ehg-5G-Ci9" kind="show" identifier="VillainSelectedSegue" id="gJq-XH-mON"/>
                                 </connections>
                             </collectionViewCell>
@@ -148,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJJ-mJ-gbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3789.8550724637685" y="-319.41964285714283"/>
+            <point key="canvasLocation" x="3043" y="-176"/>
         </scene>
         <!--Villains-->
         <scene sceneID="HsQ-zs-RVa">
@@ -175,12 +177,13 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tax-UT-3hD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H4y-i4-GPU">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9Pk-j5-St5" kind="relationship" relationship="viewControllers" id="vJQ-R3-sCd"/>
                         <segue destination="zNO-1u-f5D" kind="relationship" relationship="viewControllers" id="PO8-7x-Yfb"/>
+                        <segue destination="9Pk-j5-St5" kind="relationship" relationship="viewControllers" id="vJQ-R3-sCd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfv-bO-rKN" userLabel="First Responder" sceneMemberID="firstResponder"/>

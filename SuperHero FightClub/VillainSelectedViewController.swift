@@ -10,10 +10,20 @@ import UIKit
 
 class VillainSelectedViewController: UIViewController {
 
+    
+    var villain: Villain?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func updateViews(){
+        //if let villain = villain {
+            
+        //}
     }
     
 

@@ -10,4 +10,20 @@ import UIKit
 
 class VillainCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var villainImageView: UIImageView!
+    @IBOutlet weak var villainNameLabel: UILabel!
+    
+    
+    var villain: Villain? {
+        didSet{
+            
+        }
+    }
+    
+    private func updateViews(){
+        guard let villain = villain else{return}
+        villainImageView.image = villain.image
+        villainNameLabel.text = villain.name
+    }
+    
 }
