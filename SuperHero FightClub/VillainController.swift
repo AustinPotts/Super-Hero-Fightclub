@@ -15,7 +15,14 @@ var villains: [Villain] = [
 
              Villain(name: "Bane", imageName: "Bane"),
              Villain(name: "DarthVader", imageName: "DarthVader"),
-             Villain(name: "TheJoker", imageName: "Joker")
+             Villain(name: "TheJoker", imageName: "Joker"),
+             Villain(name: "Seven", imageName: "Seven"),
+             Villain(name: "Freddy", imageName: "Freddy"),
+             Villain(name: "Pred2", imageName: "Pred2"),
+             Villain(name: "Shredder", imageName: "Shredder"),
+             Villain(name: "Godzilla", imageName: "Godzilla"),
+             Villain(name: "DrDoom", imageName: "DrDoom"),
+             Villain(name: "Predator", imageName: "Predator"),
 
 
 
